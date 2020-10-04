@@ -13,12 +13,23 @@ from Student import Student # import Student.py file , then get Student class
 from Student import graduate 
 
 Learner1 = Student("Kiriyan", "Business", 3.1, False) # create an object called Learner1 from class Student
-Learner2 = Student("Pam", "Art", 5.1, True)
+Learner2 = Student("Pam", "Art", 5.1, True)   #we assign values to class variables.
 
-grad1 = graduate("Tony", "Art", 5.1, True, "eng")
+grad1 = graduate("eng", "Tony", "Art", 5.1, True)
+
+
+#we make an instance variable called location for Learner1 object.
+Learner1.location = "Glasgow"
 
 
 print(grad1.job)
+
+print(Learner1.name)
+
+print(Learner1.location)
+
+#print all the variables associated with the object Learner1
+print(Learner1.__dict__)
 
 """
 print(Learner1.name)

@@ -4,10 +4,10 @@ class Student:
         # __init__ is class initialize  function 
         # self refers to the actual object.
         
-        # we define the attributes below
+        # we define the attributes below, these are calss variables.
         self.name = name #name for student
         self.major = major
-        self.gpa = gpa
+        self.gpa = gpa      #gpa is class variable.
         self.is_on_probation = is_on_probation
 
 
@@ -24,5 +24,7 @@ class Student:
 
 
 class graduate(Student):
-    def __init__(self, job):    
+    def __init__(self, name, major, gpa, is_on_probation, job):
+        super.__init__(name, major, gpa, is_on_probation)
         self.job = job
+
